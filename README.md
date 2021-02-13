@@ -1,2 +1,8 @@
 # bca-restapi
-This is my project to learn about BCA, and PrismaORM using simple RESTAPI
+## IMPORTANT
+Make sure the prisma already installed on your local
+
+### Setup
+-> npm install
+-> npm run prisma
+-> npm run start-dev
