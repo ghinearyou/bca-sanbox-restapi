@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start-dev": "node index.js",
+    "prisma": "node ./schema/index.js && prisma generate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
