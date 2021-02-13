@@ -6,12 +6,12 @@ const express = require('express'),
 const app = express()
 require('dotenv').config()
 
-const url = process.env.sandbca
+const url = process.env.SANDBCA
 app.use(bodyParser.json())
 
 const generate = () => {
-    let client_id = process.env.client_id
-    let client_secret = process.env.client_secret
+    let client_id = process.env.CLIENT_ID
+    let client_secret = process.env.CLIENT_SECRET
     let data = client_id + ':' + client_secret
     let result = new Buffer(data).toString('base64');
     return 'Basic '+result
@@ -35,7 +35,6 @@ app.route('/oauth').get(async (req, res) => {
                 'Content-Type': 'application/x-www-form-urlencoded',
             }
         })
-        console.log(result);
         res.send(result.data)    
     } catch (e) { 
         res.send(e.response.data)
@@ -43,6 +42,5 @@ app.route('/oauth').get(async (req, res) => {
 })
 
 app.listen(3000, () => {
-    console.log(url);
     console.log('server starting up on : 3000')
 })
