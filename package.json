@@ -1,0 +1,35 @@
+{
+  "name": "bca-restapi",
+  "version": "1.0.0",
+  "description": "learning bca-restapi",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghinearyou/bca-restapi.git"
+  },
+  "keywords": [
+    "bca",
+    "restapi",
+    "prismaorm"
+  ],
+  "author": "hafidh al ghifari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ghinearyou/bca-restapi/issues"
+  },
+  "homepage": "https://github.com/ghinearyou/bca-restapi#readme",
+  "dependencies": {
+    "@prisma/client": "^2.16.1",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "prisma": "^2.16.1",
+    "qs": "^6.9.6"
+  }
+}
